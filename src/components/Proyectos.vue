@@ -15,8 +15,9 @@ export default {
   },
   created: function () { 
     axios
-	  .get("http://127.0.0.1:8000/proyect/list/")
+	  .get("https://epyme.herokuapp.com/proyect/list/")
       .then(response => (this.proyectos = response.data))
   },
 };
 </script>
+

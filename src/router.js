@@ -1,4 +1,5 @@
 import vueRouter from 'vue-router'
+import Home from './components/Home.vue'
 import Proyectos from './components/Proyectos.vue'
 //import UserBalance from './components/UserBalance'
 import App from './App'
@@ -8,20 +9,15 @@ const router = new vueRouter({
 	base: __dirname,
 	routes: [
 		{
-			path: '/',
-			name: "root",
-			component: App
+			path: '/, /home',
+			name: "home",
+			component: Home
 		},
 		{
 			path: '/proyectos',
-			name: "proyectos",
+			name: "Proyectos",
 			component: Proyectos
-		},/*
-		{
-			path: '/user/balance/:username',
-			name: "user_balance",
-			component: UserBalance
-		},*/
+		}
 	]
 })
 export default router
