@@ -1,21 +1,28 @@
 <template>
   <div id="app">
 	<b-nav tabs>
-		<b-nav-item active to="/home">Pagina principal</b-nav-item>
+		<b-nav-item active>
+		<router-link to="/home">Home</router-link></b-nav-item>
 		<b-nav-item>
 			<router-link to="/proyectos">Proyectos</router-link>
 		</b-nav-item>
-		<b-nav-item>Asignar</b-nav-item>
+		<b-nav-item>
+			<router-link to="/asignacion">Asignación</router-link>
+		</b-nav-item>
 	</b-nav>
-	<div>
-      <router-view/>
-    </div>
-  </div>
+	<b-container>
+      <router-view>
+	  </router-view>
+    </b-container>
+</div> 
 </template>
 
 
 <style>
 .nav-tabs {
 	padding: 10px 10px 0 10px;
+}
+.container {
+	margin-top: 15px;
 }
 </style>

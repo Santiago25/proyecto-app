@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div >
     <h1>E-Pyme App</h1>
   </div>
 </template>
@@ -7,8 +7,5 @@
 <script>
 
 export default {
-  name: 'Home',
-  components: {
-  }
 }
 </script>
