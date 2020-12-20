@@ -4,6 +4,12 @@
 		<b-nav-item>
 		<router-link to="/home">Home</router-link></b-nav-item>
 		<b-nav-item>
+			<router-link to="/nuevoUsuario">Agregar Usuario</router-link>
+		</b-nav-item>
+		<b-nav-item>
+			<router-link to="/nuevoProyecto">Agregar Proyecto</router-link>
+		</b-nav-item>
+		<b-nav-item>
 			<router-link to="/proyectos">Proyectos</router-link>
 		</b-nav-item> 
 		<b-nav-item>
