@@ -15,7 +15,7 @@ export default {
   },
   created: function () { 
     axios
-	  .get("https://epyme.herokuapp.com/proyect/list/")
+	  .get("https://epyme.herokuapp.com/proyect/list")
       .then(response => (this.proyectos = response.data))
   },
 };

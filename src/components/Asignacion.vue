@@ -50,10 +50,13 @@ export default {
     onSubmit(event) {
 	  event.preventDefault();
 	  
-      axios.post('https://epyme.herokuapp.com/proyect/addUser/', {
+      axios.post('https://epyme.herokuapp.com/proyect/addUser', {
         	nombre: this.form.name,
         	nombreP: this.form.proyect,
-        }).then((response) => console.log(response.data), this.onReset)
+        }).then((response) => {
+			alert("Hecho!")
+			this.onReset()
+		})
         .catch((e) => console.log("Error!: " + e));       
     },
     onReset(event) {
