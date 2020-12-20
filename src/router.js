@@ -22,6 +22,10 @@ const router = new vueRouter({
 			path: '/asignacion',
 			name: "Asignacion",
 			component: Asignacion
+		},
+		{
+			path: '',
+			component: Home
 		}
 	]
 })
