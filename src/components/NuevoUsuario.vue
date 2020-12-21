@@ -64,7 +64,7 @@ export default {
     onSubmit(event) {
 	  event.preventDefault();
 	  
-      axios.post('http://127.0.0.1:8000/usuario', {
+      axios.post('https://epyme.herokuapp.com/usuario', {
 			username: this.form.nombre,
 			correo: this.form.correo,
 			password: this.form.password
